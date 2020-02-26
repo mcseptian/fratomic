@@ -31,10 +31,10 @@ Keep what you need, delete what you don't and add whatever you like on top of wh
 
 ## Developing
 
-1. In the project directory, run ```npm watch``` and working on
+1. In the project directory, run ```npm run watch``` and working on
 2. You're now ready to configure this project to meet your project requirement, ```npm run build``` to build the whole project
 3. From the project directory, run ```npm run serve``` to serve your incremental dev
-4. Run script `.builder/ship.sh` followed by version to publish your project
+4. Run script `./builder/ship.sh` followed by version to publish your project
 
 ## Configuration
 
