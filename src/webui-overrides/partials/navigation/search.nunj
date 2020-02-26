@@ -1,0 +1,19 @@
+<div class="Navigation-group">
+    <div class="Tree">
+        <h2 class="Tree-title">Filter</h2>
+        <div class="Tree-item Tree-depth-1">
+            <div class="Tree-item Tree-collection Tree-depth-2">
+                <input id="search" class="Tree-collectionItems Tree-collectionItemsText" type="text" autocomplete="on" />
+            </div>
+            <div class="Tree-item Tree-collection Tree-depth-2"">
+                <div class="Tree-item Tree-item Tree-collectionItems">
+                    <input id="auto-search" class="Tree-item-child Tree-collectionItemsCheckbox" type="checkbox" checked="true">
+                    <button id="search-btn" class="Tree-entityLink">
+                        Search
+                    </button>
+                    <p aria-live="polite" id="search-result" class="Tree-collectionItemsText"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

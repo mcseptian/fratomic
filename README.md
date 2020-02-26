@@ -18,7 +18,8 @@ Keep what you need, delete what you don't and add whatever you like on top of wh
 * Markup, config and markdown files for typography, buttons, form elements and tables included
 * Statuses for components & documentation pages improved
 * Template export function included
-* Uses the [Mono](https://github.com/AccentDesign/Mono) theme 'out of the box'
+* Uses the [Mono](https://github.com/ninety-six/mono-fractal) theme 'out of the box'
+* Use bootstrap Framework as test-bed
 
 ## Installing
 
@@ -27,6 +28,13 @@ Keep what you need, delete what you don't and add whatever you like on top of wh
 3. Once the download is complete, unpack the ZIP file to an appropriate location
 4. From inside the directory root, run ```npm install```
 5. You're now ready to configure your starter project
+
+## Developing
+
+1. In the project directory, run ```npm watch``` and working on
+2. You're now ready to configure this project to meet your project requirement, ```npm run build``` to build the whole project
+3. From the project directory, run ```npm run serve``` to serve your incremental dev
+4. Run script `.builder/ship.sh` followed by version to publish your project
 
 ## Configuration
 
@@ -71,17 +79,24 @@ This command will package up your complete Fractal UI library and convert it to 
 ## Directories Explained
 
 * ```build/``` - publishable HTML version of complete Fractal library 
-* ```components/``` - Fractal library 'building block' components structured using Atomic Design principles. Go [here](https://fractal.build/guide/components/) to find out more about components.
+
 * ```dist/``` - directory containing all compiled styling, scripts and other 'production ready' frontend resources ready to be distributed/published
-    * ```css/``` - compiled CSS files
-    * ```font/``` - any fonts used
-    * ```img/``` - images used in the projects styling
     * ```js/``` - compiled JavaScript files
+    * ```css/``` - compiled CSS files
+    * ```img/``` - images used in the projects styling
     * ```twig/``` - 'production ready' template markup of components in Twig
+    * ```fonts/``` - any fonts used
     * ```vendor/``` - external third party CSS or JS files and resources (eg. Animate.css, jQuery)
     * ```webui-overrides/``` - markup and styles used to override Fractal's Mono theme
-* ```docs/``` - Fractal library documentation pages in markdown format. Go [here](https://fractal.build/guide/documentation/) to find out more about documentation.
 * ```src/``` - directory containing Sass and JavaScript files to be compiled into the appropriate folders in the 'dist' directory.
+    * ```webui-overrides/``` - markup and styles used to override Fractal's Mono theme
+    * ```components/``` - Fractal library 'building block' components structured using Atomic Design principles. Go [here](https://fractal.build/guide/components/) to find out more about components.
+    * ```vendor/``` - external third party SCSS
+    * ```fonts/``` - any fonts used in the projects
+    * ```docs/``` - Fractal library documentation pages in markdown format. Go [here](https://fractal.build/guide/documentation/) to find out more about documentation.
+    * ```scss/``` - SCSS source files
+    * ```img/``` - Uncompressed images used in the projects
+    * ```js/``` - JavaScript source files
 
 ## Working with Components
 
